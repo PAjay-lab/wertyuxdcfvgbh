@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>SAC Story List</title>
+</head>
+<body>
+  <h1>Available Stories</h1>
+ <ul>
+  <% stories.forEach(function(story) { %>
+    <li><strong><%= story.name %></strong> - ID: <%= story.id %></li>
+  <% }); %>
+</ul>
+</body>
+</html>
